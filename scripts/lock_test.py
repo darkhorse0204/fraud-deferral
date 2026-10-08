@@ -25,7 +25,8 @@ def digest() -> dict:
         files = [p] if p.is_file() else sorted(p.rglob("*")) if p.exists() else []
         for f in files:
             if f.is_file():
-                out[str(f.relative_to(ROOT)).replace("\\", "/")] = hashlib.sha256(f.read_bytes()).hexdigest()
+                # line endings are normalised so the lock verifies on any checkout (Windows CRLF or Unix LF)
+                out[str(f.relative_to(ROOT)).replace("\\", "/")] = hashlib.sha256(f.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
     return out
 
 
