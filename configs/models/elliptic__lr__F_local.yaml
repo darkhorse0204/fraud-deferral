@@ -1,0 +1,7 @@
+dataset: elliptic
+dev_auprc: 0.4462148584924617
+fs: F_local
+hp:
+  C: 1.5771187213257742
+  balanced: false
+scorer: lr

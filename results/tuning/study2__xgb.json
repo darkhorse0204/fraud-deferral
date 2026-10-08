@@ -1,0 +1,123 @@
+[
+ {
+  "trial": 0,
+  "hp": {
+   "M": 3,
+   "device": "cuda"
+  },
+  "dev_auprc": 0.44093047294745386,
+  "secs": 22.8
+ },
+ {
+  "trial": 1,
+  "hp": {
+   "eta": 0.14221735351247625,
+   "max_depth": 3,
+   "rounds": 100,
+   "subsample": 0.6,
+   "colsample": 0.5,
+   "min_child_weight": 5,
+   "pos_weight_pow": 1.0,
+   "M": 3,
+   "device": "cuda"
+  },
+  "dev_auprc": 0.4513636691990235,
+  "secs": 7.9
+ },
+ {
+  "trial": 2,
+  "hp": {
+   "eta": 0.2971141623854821,
+   "max_depth": 3,
+   "rounds": 100,
+   "subsample": 1.0,
+   "colsample": 0.5,
+   "min_child_weight": 1,
+   "pos_weight_pow": 0.0,
+   "M": 3,
+   "device": "cuda"
+  },
+  "dev_auprc": 0.44988104731653034,
+  "secs": 7.3
+ },
+ {
+  "trial": 3,
+  "hp": {
+   "eta": 0.06867017377481294,
+   "max_depth": 4,
+   "rounds": 100,
+   "subsample": 0.8,
+   "colsample": 0.8,
+   "min_child_weight": 5,
+   "pos_weight_pow": 0.5,
+   "M": 3,
+   "device": "cuda"
+  },
+  "dev_auprc": 0.4532618791696693,
+  "secs": 9.6
+ },
+ {
+  "trial": 4,
+  "hp": {
+   "eta": 0.03823903593137574,
+   "max_depth": 4,
+   "rounds": 200,
+   "subsample": 1.0,
+   "colsample": 0.5,
+   "min_child_weight": 1,
+   "pos_weight_pow": 0.5,
+   "M": 3,
+   "device": "cuda"
+  },
+  "dev_auprc": 0.4534607632944577,
+  "secs": 27.4
+ },
+ {
+  "trial": 5,
+  "hp": {
+   "eta": 0.2836243100023954,
+   "max_depth": 6,
+   "rounds": 400,
+   "subsample": 0.8,
+   "colsample": 0.8,
+   "min_child_weight": 1,
+   "pos_weight_pow": 0.0,
+   "M": 3,
+   "device": "cuda"
+  },
+  "dev_auprc": 0.4352930174514738,
+  "secs": 69.5
+ },
+ {
+  "trial": 6,
+  "hp": {
+   "eta": 0.048246428100935684,
+   "max_depth": 8,
+   "rounds": 200,
+   "subsample": 1.0,
+   "colsample": 0.5,
+   "min_child_weight": 5,
+   "pos_weight_pow": 1.0,
+   "M": 3,
+   "device": "cuda"
+  },
+  "dev_auprc": 0.43403250082863704,
+  "secs": 48.2
+ },
+ {
+  "trial": 7,
+  "hp": {
+   "eta": 0.04900931138933822,
+   "max_depth": 4,
+   "rounds": 100,
+   "subsample": 1.0,
+   "colsample": 1.0,
+   "min_child_weight": 1,
+   "pos_weight_pow": 0.0,
+   "M": 3,
+   "device": "cuda"
+  },
+  "dev_auprc": 0.45264624298714257,
+  "secs": 12.2
+ }
+]

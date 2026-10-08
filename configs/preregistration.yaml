@@ -1,0 +1,53 @@
+# PRE-REGISTRATION. Frozen by scripts/lock_test.py before any test-era score is generated.
+# Anything not listed here is EXPLORATORY and must be labelled so in the paper.
+title: "When does uncertainty pay? Uncertainty-aware deferral for fraud/illicit-transaction detection under temporal shift and delayed labels"
+datasets:
+  primary: elliptic          # real labels, real regime break (dark-market shutdown, step 43; from the literature, disclosed)
+  replication: [baf_Base, "baf_Variant III"]   # synthetic benchmark (CTGAN+DP). Selection rule: Base (reference) + one variant from the
+                                               # other observed monthly-prevalence family (III, IV, V identical in month-level rate); chosen
+                                               # from dataset-level fraud rate by month BEFORE any model was run; the paper's variant table was unreadable.
+  dropped: {ulb_creditcard: "no entity ids", paysim: "simulator rules", ieee_cis: "licence/competition-rules unverified"}
+eras:
+  elliptic: {dev: [1, 34], test: [35, 49], T1: [35, 42], T2: [43, 49]}
+  baf: {dev: [0, 3], test: [4, 7], T1: [4, 5], T2: [6, 7]}
+protocol:
+  maturity: "label of an event from period s usable at decision period t iff s + D < t"
+  D: {elliptic: 2, baf: 1}
+  Wc: {elliptic: 4, baf: 1}      # calibration reserve: scorer trains on periods <= t_origin - D - 1 - Wc
+  R: {elliptic: 5, baf: 2}       # retrain interval
+  seeds: {elliptic: 10, baf: 5}  # BAF reduced from 10 to 5 for size (documented deviation)
+  unknown_labels: "excluded from training and evaluation (Elliptic); limitation L8/L9"
+primary_scorer_rule: "ensemble-capable scorer with highest mean dev walk-forward AUPRC on F_all; all scorers are reported"
+policies: [pi0, pi1, pi2, pi3, pi4, pi4_nodelta, pi4_noshrink, pi5, pi6, pi7_diagnostic_only]
+control_for_H1: pi2   # Chow band on recalibrated p, same scorer, same recalibration window
+calibration: "affine-logit (Platt) on matured window; choice among {affine, temp, isotonic} and (W, h) made on dev by pi2 cost"
+uncertainty: "variance of ensemble-member probabilities (u); LR has u=0"
+hypotheses:
+  H1a: "Decision-layer benefit. Post-shift (Elliptic T2 = steps 43-49), primary scorer, pi4 (MAD) has lower pooled cost per 1000 events than pi2 in the
+        primary cell (C_FN=30, C_FP=5), 95% moving-block-bootstrap CI (block 2, B=5000) of the paired gain excluding 0, AND positive gain in >= 4 of the
+        6 non-degenerate cost cells, AND same sign on BAF Base T2 (pooled months 6-7)."
+  H1b: "Attribution to uncertainty (required for the claim 'uncertainty pays'). In the same Elliptic T2 primary cell the gain of pi4 over BOTH
+        (i) pi4_nodelta (same threshold adaptation, no epistemic cap) and (ii) pi4 run on u permuted within each (seed, origin) table (random-u control;
+        same marginal u, same review-rate mechanism) has a CI excluding 0. Also pi3 vs pi2 and pi3 vs pi3_randu are reported. If H1a holds and H1b fails the
+        gain is attributed to threshold adaptation / hedging, NOT to uncertainty, and the paper says so."
+  H1_cells_criterion: ">= 4 of 6 non-degenerate cells (corrected from the draft '6 of 8': all three C_FP=1 cells are degenerate)"
+  H2: "Spearman correlation between per-period uncertainty-attributable gain (pi3 vs pi3_randu cost per 1000; secondary: pi4 vs pi4_nodelta) and the
+       per-period incremental conditional calibration error CE_u (nested p-bin x u-tercile cells minus p-bin cells, permutation-bias-corrected; > 0 iff u
+       carries label information beyond p) is > 0 (lower bootstrap CI bound > 0) over the 15 Elliptic test periods; AND pi4 is non-inferior to pi2 in T1
+       (TOST, margin 2% of pi2 cost)."
+  H3: "Two-sided: SAGE-ens(F_local) vs MLP-ens(F_local) and vs the best tabular F_local scorer differ in pooled cost (primary cell, test era)."
+failure_criteria:
+  - "H1 CI includes 0 in the primary cell on Elliptic T2"
+  - "gain positive in fewer than 4 of 6 non-degenerate cells"
+  - "gain not replicated in sign on BAF Base T2"
+  - "H1b fails: pi4 does not beat pi4_nodelta or the random-u control (gain not attributable to u)"
+  - "review load more than 25% above pi2 without compensating cost reduction"
+confirmatory_family_for_holm: [H1a_elliptic_T2, H1b_elliptic_T2_vs_nodelta, H1b_elliptic_T2_vs_randu, H1a_baf_T2, H2_spearman]
+exploratory: "everything else (D sweep, capacity, rho, robustness stress tests, ablations, error analysis, H3 interpretation)"
+statistics:
+  bootstrap: {unit: period, block_length: 2, resamples: 5000, ci: 0.95}
+  per_period_aggregation: "average over seeds of per-period cost, then resample periods"
+  tests: [wilcoxon_signed_rank_periods, friedman_nemenyi_policies, tost_2pct, spearman_block_ci]
+  multiplicity: holm
+deviations_from_spec: "see Research-project-spec.md amendments log (M1-M15)"
+pre_lock_changes: "CE_u redefined (nested cells, incremental, permutation-corrected) and H1 split into H1a/H1b after the synthetic mechanism check (experiments/synth_mechanism.py); MAD gained a min_gain rule and a stronger shrinkage grid. All before any test-era score existed."

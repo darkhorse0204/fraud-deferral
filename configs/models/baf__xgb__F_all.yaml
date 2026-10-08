@@ -1,0 +1,13 @@
+dataset: baf
+dev_auprc: 0.154624857072611
+fs: F_all
+hp:
+  M: 3
+  colsample: 0.5
+  eta: 0.14221735351247625
+  max_depth: 3
+  min_child_weight: 5
+  pos_weight_pow: 1.0
+  rounds: 100
+  subsample: 0.6
+scorer: xgb

@@ -1,0 +1,6 @@
+dataset: elliptic
+dev_auprc: 0.702576707715827
+fs: F_all
+hp:
+  M: 3
+scorer: sage

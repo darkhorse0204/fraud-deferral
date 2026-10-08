@@ -1,0 +1,12 @@
+# Pinned to the versions the Phase-0 pipeline was developed and tested with (Python 3.11.9, Windows 11).
+numpy==2.4.6
+pandas==3.0.5
+pyarrow==25.0.1
+scipy==1.17.1
+scikit-learn==1.9.0
+xgboost==3.2.0
+torch==2.5.1          # CUDA 12.1 build used locally; CPU build also fine
+PyYAML==6.0.3
+kaggle==2.2.4         # dataset download only
+pytest==9.1.1
+# Added in later phases (not needed for Phase 0): torch-geometric, optuna, matplotlib

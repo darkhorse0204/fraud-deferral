@@ -1,0 +1,31 @@
+# Raw and processed data are never committed (Elliptic: CC BY-NC-ND, BAF: CC BY-NC-SA). Only the checksum manifest is.
+data/raw/
+data/processed/
+!data/MANIFEST.json
+
+# Event-level score tables carry per-event labels derived from the datasets: not redistributed.
+# Per-period aggregates (results/policy, results/diag, results/study2) and the analysis JSON files ARE committed.
+results/scores/
+results/logs/
+results/*.log
+results/study2_dev/
+results/analysis_study2_dev.json
+
+__pycache__/
+*.pyc
+.pytest_cache/
+*.zip
+*.kaggle-partial
+.venv/
+
+# scratch renders
+paper/_check.pdf
+paper/_pg*.png
+figures/_page*.png
+~$*.docx
+
+# journal template (the authors' other manuscript, used only for its styles): local, not committed
+paper/_template.docx
+
+# manuscript (sources, generated numbers, tables, built documents): kept local until publication
+paper/

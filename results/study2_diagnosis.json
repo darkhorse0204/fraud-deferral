@@ -1,0 +1,136 @@
+{
+ "n_event_seeds": 5589090,
+ "decomposition_per_1000": {
+  "pi1": {
+   "missed_amount": 34.21879964659133,
+   "review_cost": 0.0,
+   "blocked_legit": 0.5111345988231425,
+   "review_rate": 0.0,
+   "block_rate": 0.002163142837206057,
+   "illicit_caught_in_review": 0.0,
+   "amount_saved_by_review": 0.0,
+   "total": 34.72993424541447
+  },
+  "pi2": {
+   "missed_amount": 29.312361550174263,
+   "review_cost": 13.59291047379806,
+   "blocked_legit": 0.1210398727484982,
+   "review_rate": 0.05437164189519224,
+   "block_rate": 0.001910507792860734,
+   "illicit_caught_in_review": 0.061933561223595404,
+   "amount_saved_by_review": 5.1183475150176845,
+   "total": 43.02631189672082
+  },
+  "pi4": {
+   "missed_amount": 30.646592506456585,
+   "review_cost": 10.326636357618145,
+   "blocked_legit": 0.1358047301821056,
+   "review_rate": 0.04130654543047258,
+   "block_rate": 0.0019725930339286003,
+   "illicit_caught_in_review": 0.04360592514681392,
+   "amount_saved_by_review": 3.7824286861208045,
+   "total": 41.109033594256836
+  }
+ },
+ "by_amount": [
+  {
+   "amount": "[0.0, 0.5)",
+   "share_of_events": 0.18320692635115912,
+   "illicit_rate": 0.0056789327708113594,
+   "mean_calibrated_p": 0.02043226677168192,
+   "ratio_p_over_rate": 3.5979060848721276,
+   "review_rate_pi2": 0.0,
+   "review_rate_pi4": 0.00020703933747412008,
+   "illicit_per_review_pi2": null,
+   "breakeven_rate": null,
+   "share_of_illicit_amount": 0.010334783095839302
+  },
+  {
+   "amount": "[0.5, 1.0)",
+   "share_of_events": 0.21860088135993516,
+   "illicit_rate": 0.02354351847304752,
+   "mean_calibrated_p": 0.02154166604586445,
+   "ratio_p_over_rate": 0.9149722489663225,
+   "review_rate_pi2": 0.0,
+   "review_rate_pi4": 0.00019152384226292786,
+   "illicit_per_review_pi2": null,
+   "breakeven_rate": null,
+   "share_of_illicit_amount": 0.0904649789187779
+  },
+  {
+   "amount": "[1.0, 2.0)",
+   "share_of_events": 0.1766530866384331,
+   "illicit_rate": 0.041875563388127576,
+   "mean_calibrated_p": 0.028026354783027,
+   "ratio_p_over_rate": 0.6692770798869524,
+   "review_rate_pi2": 0.004777531321847812,
+   "review_rate_pi4": 0.0034628746214538197,
+   "illicit_per_review_pi2": 0.019927920288318846,
+   "breakeven_rate": 0.13487455008456226,
+   "share_of_illicit_amount": 0.23100651575336165
+  },
+  {
+   "amount": "[2.0, 5.0)",
+   "share_of_events": 0.16553678684723275,
+   "illicit_rate": 0.03596519671422395,
+   "mean_calibrated_p": 0.02946513441410751,
+   "ratio_p_over_rate": 0.8192679897800832,
+   "review_rate_pi2": 0.07623324686554259,
+   "review_rate_pi4": 0.055028102031993084,
+   "illicit_per_review_pi2": 0.08664275283208801,
+   "breakeven_rate": 0.07139504776573019,
+   "share_of_illicit_amount": 0.4369660739109904
+  },
+  {
+   "amount": "[5.0, 20.0)",
+   "share_of_events": 0.15546985287408147,
+   "illicit_rate": 0.005069424065091175,
+   "mean_calibrated_p": 0.011993942301478733,
+   "ratio_p_over_rate": 2.365937855558552,
+   "review_rate_pi2": 0.1285493161168557,
+   "review_rate_pi4": 0.09386432817184254,
+   "illicit_per_review_pi2": 0.006660638669304661,
+   "breakeven_rate": 0.023532005846714072,
+   "share_of_illicit_amount": 0.14208294941525138
+  },
+  {
+   "amount": "[20.0, 100.0)",
+   "share_of_events": 0.0737499306684988,
+   "illicit_rate": 0.0011523672048423684,
+   "mean_calibrated_p": 0.006523462951911704,
+   "ratio_p_over_rate": 5.66092381360683,
+   "review_rate_pi2": 0.18042188769878334,
+   "review_rate_pi4": 0.14254903625711132,
+   "illicit_per_review_pi2": 0.001573236160228052,
+   "breakeven_rate": 0.005382438300762125,
+   "share_of_illicit_amount": 0.08456238154216125
+  },
+  {
+   "amount": "[100.0, inf)",
+   "share_of_events": 0.026782535260659608,
+   "illicit_rate": 6.680472977486806e-05,
+   "mean_calibrated_p": 0.004010644937871412,
+   "ratio_p_over_rate": 60.03534407499717,
+   "review_rate_pi2": 0.2843877346516133,
+   "review_rate_pi4": 0.23895383793172556,
+   "illicit_per_review_pi2": 0.0,
+   "breakeven_rate": 0.00022343740138497227,
+   "share_of_illicit_amount": 0.004582317363618113
+  }
+ ],
+ "corr_logA_y": -0.03937557355969964,
+ "conditional_calibration": {
+  "ce_amount": 0.0025887925506766184,
+  "ce_variance": 0.0011927362347058591,
+  "ece": 0.01256819754642549
+ },
+ "test_auprc_seed0": 0.11669009930429264,
+ "overall": {
+  "illicit_rate": 0.02041298315110331,
+  "mean_calibrated_p": 0.020734082356672488,
+  "median_amount_illicit": 1.2000000476837158,
+  "median_amount_legit": 1.404827356338501,
+  "p90_amount_illicit": 4.0,
+  "p90_amount_legit": 20.141967582702655
+ }
+}

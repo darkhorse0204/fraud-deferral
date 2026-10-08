@@ -1,0 +1,1056 @@
+{
+  "baf": {
+    "Base": {
+      "columns": [
+        "fraud_bool",
+        "income",
+        "name_email_similarity",
+        "prev_address_months_count",
+        "current_address_months_count",
+        "customer_age",
+        "days_since_request",
+        "intended_balcon_amount",
+        "payment_type",
+        "zip_count_4w",
+        "velocity_6h",
+        "velocity_24h",
+        "velocity_4w",
+        "bank_branch_count_8w",
+        "date_of_birth_distinct_emails_4w",
+        "employment_status",
+        "credit_risk_score",
+        "email_is_free",
+        "housing_status",
+        "phone_home_valid",
+        "phone_mobile_valid",
+        "bank_months_count",
+        "has_other_cards",
+        "proposed_credit_limit",
+        "foreign_request",
+        "source",
+        "session_length_in_minutes",
+        "device_os",
+        "keep_alive_session",
+        "device_distinct_emails_8w",
+        "device_fraud_count",
+        "month"
+      ],
+      "columns_with_negative_values": {
+        "bank_months_count": 253635,
+        "credit_risk_score": 14445,
+        "current_address_months_count": 4254,
+        "device_distinct_emails_8w": 359,
+        "intended_balcon_amount": 742523,
+        "prev_address_months_count": 712920,
+        "session_length_in_minutes": 2015,
+        "velocity_6h": 44
+      },
+      "constant_features": [
+        "device_fraud_count"
+      ],
+      "dtypes_object": [
+        "payment_type",
+        "employment_status",
+        "housing_status",
+        "source",
+        "device_os"
+      ],
+      "duplicate_rows_features_only": 0,
+      "fraud_rate": 0.01103,
+      "leak_candidates_auroc_gt_0.95": [],
+      "n_features": 30,
+      "nan_cells": 0,
+      "per_month": {
+        "0": {
+          "fraud": 1500,
+          "n": 132440,
+          "rate": 0.01133
+        },
+        "1": {
+          "fraud": 1198,
+          "n": 127620,
+          "rate": 0.00939
+        },
+        "2": {
+          "fraud": 1198,
+          "n": 136979,
+          "rate": 0.00875
+        },
+        "3": {
+          "fraud": 1392,
+          "n": 150936,
+          "rate": 0.00922
+        },
+        "4": {
+          "fraud": 1452,
+          "n": 127691,
+          "rate": 0.01137
+        },
+        "5": {
+          "fraud": 1411,
+          "n": 119323,
+          "rate": 0.01183
+        },
+        "6": {
+          "fraud": 1450,
+          "n": 108168,
+          "rate": 0.01341
+        },
+        "7": {
+          "fraud": 1428,
+          "n": 96843,
+          "rate": 0.01475
+        }
+      },
+      "rows": 1000000,
+      "single_feature_auroc_dev_top10": {
+        "bank_branch_count_8w": 0.5792,
+        "credit_risk_score": 0.6527,
+        "current_address_months_count": 0.6402,
+        "customer_age": 0.6622,
+        "date_of_birth_distinct_emails_4w": 0.6301,
+        "income": 0.629,
+        "keep_alive_session": 0.6178,
+        "name_email_similarity": 0.5953,
+        "prev_address_months_count": 0.6107,
+        "proposed_credit_limit": 0.6316
+      },
+      "variant": "Base"
+    },
+    "Variant I": {
+      "columns": [
+        "fraud_bool",
+        "income",
+        "name_email_similarity",
+        "prev_address_months_count",
+        "current_address_months_count",
+        "customer_age",
+        "days_since_request",
+        "intended_balcon_amount",
+        "payment_type",
+        "zip_count_4w",
+        "velocity_6h",
+        "velocity_24h",
+        "velocity_4w",
+        "bank_branch_count_8w",
+        "date_of_birth_distinct_emails_4w",
+        "employment_status",
+        "credit_risk_score",
+        "email_is_free",
+        "housing_status",
+        "phone_home_valid",
+        "phone_mobile_valid",
+        "bank_months_count",
+        "has_other_cards",
+        "proposed_credit_limit",
+        "foreign_request",
+        "source",
+        "session_length_in_minutes",
+        "device_os",
+        "keep_alive_session",
+        "device_distinct_emails_8w",
+        "device_fraud_count",
+        "month"
+      ],
+      "columns_with_negative_values": {
+        "bank_months_count": 254905,
+        "credit_risk_score": 15021,
+        "current_address_months_count": 4442,
+        "device_distinct_emails_8w": 318,
+        "intended_balcon_amount": 739988,
+        "prev_address_months_count": 704367,
+        "session_length_in_minutes": 1842,
+        "velocity_6h": 36
+      },
+      "constant_features": [
+        "device_fraud_count"
+      ],
+      "dtypes_object": [
+        "payment_type",
+        "employment_status",
+        "housing_status",
+        "source",
+        "device_os"
+      ],
+      "duplicate_rows_features_only": 0,
+      "fraud_rate": 0.01103,
+      "leak_candidates_auroc_gt_0.95": [],
+      "n_features": 30,
+      "nan_cells": 0,
+      "per_month": {
+        "0": {
+          "fraud": 1500,
+          "n": 132440,
+          "rate": 0.01133
+        },
+        "1": {
+          "fraud": 1198,
+          "n": 127620,
+          "rate": 0.00939
+        },
+        "2": {
+          "fraud": 1198,
+          "n": 136979,
+          "rate": 0.00875
+        },
+        "3": {
+          "fraud": 1392,
+          "n": 150938,
+          "rate": 0.00922
+        },
+        "4": {
+          "fraud": 1452,
+          "n": 127691,
+          "rate": 0.01137
+        },
+        "5": {
+          "fraud": 1411,
+          "n": 119322,
+          "rate": 0.01183
+        },
+        "6": {
+          "fraud": 1450,
+          "n": 108168,
+          "rate": 0.01341
+        },
+        "7": {
+          "fraud": 1428,
+          "n": 96842,
+          "rate": 0.01475
+        }
+      },
+      "rows": 1000000,
+      "single_feature_auroc_dev_top10": {
+        "bank_branch_count_8w": 0.5845,
+        "credit_risk_score": 0.6326,
+        "current_address_months_count": 0.6169,
+        "customer_age": 0.5831,
+        "income": 0.6319,
+        "keep_alive_session": 0.6136,
+        "name_email_similarity": 0.5853,
+        "phone_home_valid": 0.5768,
+        "prev_address_months_count": 0.602,
+        "proposed_credit_limit": 0.6178
+      },
+      "variant": "Variant I"
+    },
+    "Variant II": {
+      "columns": [
+        "fraud_bool",
+        "income",
+        "name_email_similarity",
+        "prev_address_months_count",
+        "current_address_months_count",
+        "customer_age",
+        "days_since_request",
+        "intended_balcon_amount",
+        "payment_type",
+        "zip_count_4w",
+        "velocity_6h",
+        "velocity_24h",
+        "velocity_4w",
+        "bank_branch_count_8w",
+        "date_of_birth_distinct_emails_4w",
+        "employment_status",
+        "credit_risk_score",
+        "email_is_free",
+        "housing_status",
+        "phone_home_valid",
+        "phone_mobile_valid",
+        "bank_months_count",
+        "has_other_cards",
+        "proposed_credit_limit",
+        "foreign_request",
+        "source",
+        "session_length_in_minutes",
+        "device_os",
+        "keep_alive_session",
+        "device_distinct_emails_8w",
+        "device_fraud_count",
+        "month"
+      ],
+      "columns_with_negative_values": {
+        "bank_months_count": 241872,
+        "credit_risk_score": 12924,
+        "current_address_months_count": 3488,
+        "device_distinct_emails_8w": 336,
+        "intended_balcon_amount": 749184,
+        "prev_address_months_count": 759415,
+        "session_length_in_minutes": 2277,
+        "velocity_6h": 38
+      },
+      "constant_features": [
+        "device_fraud_count"
+      ],
+      "dtypes_object": [
+        "payment_type",
+        "employment_status",
+        "housing_status",
+        "source",
+        "device_os"
+      ],
+      "duplicate_rows_features_only": 0,
+      "fraud_rate": 0.01103,
+      "leak_candidates_auroc_gt_0.95": [],
+      "n_features": 30,
+      "nan_cells": 0,
+      "per_month": {
+        "0": {
+          "fraud": 1500,
+          "n": 132440,
+          "rate": 0.01133
+        },
+        "1": {
+          "fraud": 1198,
+          "n": 127620,
+          "rate": 0.00939
+        },
+        "2": {
+          "fraud": 1198,
+          "n": 136978,
+          "rate": 0.00875
+        },
+        "3": {
+          "fraud": 1392,
+          "n": 150937,
+          "rate": 0.00922
+        },
+        "4": {
+          "fraud": 1452,
+          "n": 127691,
+          "rate": 0.01137
+        },
+        "5": {
+          "fraud": 1411,
+          "n": 119324,
+          "rate": 0.01182
+        },
+        "6": {
+          "fraud": 1450,
+          "n": 108168,
+          "rate": 0.01341
+        },
+        "7": {
+          "fraud": 1428,
+          "n": 96842,
+          "rate": 0.01475
+        }
+      },
+      "rows": 1000000,
+      "single_feature_auroc_dev_top10": {
+        "bank_branch_count_8w": 0.5782,
+        "credit_risk_score": 0.6737,
+        "current_address_months_count": 0.6392,
+        "customer_age": 0.702,
+        "date_of_birth_distinct_emails_4w": 0.6739,
+        "income": 0.6266,
+        "keep_alive_session": 0.6177,
+        "name_email_similarity": 0.5915,
+        "prev_address_months_count": 0.5965,
+        "proposed_credit_limit": 0.6522
+      },
+      "variant": "Variant II"
+    },
+    "Variant III": {
+      "columns": [
+        "fraud_bool",
+        "income",
+        "name_email_similarity",
+        "prev_address_months_count",
+        "current_address_months_count",
+        "customer_age",
+        "days_since_request",
+        "intended_balcon_amount",
+        "payment_type",
+        "zip_count_4w",
+        "velocity_6h",
+        "velocity_24h",
+        "velocity_4w",
+        "bank_branch_count_8w",
+        "date_of_birth_distinct_emails_4w",
+        "employment_status",
+        "credit_risk_score",
+        "email_is_free",
+        "housing_status",
+        "phone_home_valid",
+        "phone_mobile_valid",
+        "bank_months_count",
+        "has_other_cards",
+        "proposed_credit_limit",
+        "foreign_request",
+        "source",
+        "session_length_in_minutes",
+        "device_os",
+        "keep_alive_session",
+        "device_distinct_emails_8w",
+        "device_fraud_count",
+        "month",
+        "x1",
+        "x2"
+      ],
+      "columns_with_negative_values": {
+        "bank_months_count": 247242,
+        "credit_risk_score": 12128,
+        "current_address_months_count": 3473,
+        "device_distinct_emails_8w": 332,
+        "intended_balcon_amount": 751724,
+        "prev_address_months_count": 762005,
+        "session_length_in_minutes": 2256,
+        "velocity_6h": 44,
+        "x1": 497427,
+        "x2": 497769
+      },
+      "constant_features": [
+        "device_fraud_count"
+      ],
+      "dtypes_object": [
+        "payment_type",
+        "employment_status",
+        "housing_status",
+        "source",
+        "device_os"
+      ],
+      "duplicate_rows_features_only": 0,
+      "fraud_rate": 0.01103,
+      "leak_candidates_auroc_gt_0.95": [],
+      "n_features": 32,
+      "nan_cells": 0,
+      "per_month": {
+        "0": {
+          "fraud": 936,
+          "n": 80026,
+          "rate": 0.0117
+        },
+        "1": {
+          "fraud": 938,
+          "n": 105278,
+          "rate": 0.00891
+        },
+        "2": {
+          "fraud": 1044,
+          "n": 142613,
+          "rate": 0.00732
+        },
+        "3": {
+          "fraud": 2136,
+          "n": 156546,
+          "rate": 0.01364
+        },
+        "4": {
+          "fraud": 1982,
+          "n": 126369,
+          "rate": 0.01568
+        },
+        "5": {
+          "fraud": 1342,
+          "n": 147496,
+          "rate": 0.0091
+        },
+        "6": {
+          "fraud": 1668,
+          "n": 136092,
+          "rate": 0.01226
+        },
+        "7": {
+          "fraud": 984,
+          "n": 105580,
+          "rate": 0.00932
+        }
+      },
+      "rows": 1000000,
+      "single_feature_auroc_dev_top10": {
+        "bank_branch_count_8w": 0.5941,
+        "credit_risk_score": 0.6634,
+        "current_address_months_count": 0.6066,
+        "income": 0.6311,
+        "keep_alive_session": 0.6173,
+        "phone_home_valid": 0.5921,
+        "prev_address_months_count": 0.5882,
+        "proposed_credit_limit": 0.6435,
+        "x1": 0.7176,
+        "x2": 0.7227
+      },
+      "variant": "Variant III"
+    },
+    "Variant IV": {
+      "columns": [
+        "fraud_bool",
+        "income",
+        "name_email_similarity",
+        "prev_address_months_count",
+        "current_address_months_count",
+        "customer_age",
+        "days_since_request",
+        "intended_balcon_amount",
+        "payment_type",
+        "zip_count_4w",
+        "velocity_6h",
+        "velocity_24h",
+        "velocity_4w",
+        "bank_branch_count_8w",
+        "date_of_birth_distinct_emails_4w",
+        "employment_status",
+        "credit_risk_score",
+        "email_is_free",
+        "housing_status",
+        "phone_home_valid",
+        "phone_mobile_valid",
+        "bank_months_count",
+        "has_other_cards",
+        "proposed_credit_limit",
+        "foreign_request",
+        "source",
+        "session_length_in_minutes",
+        "device_os",
+        "keep_alive_session",
+        "device_distinct_emails_8w",
+        "device_fraud_count",
+        "month"
+      ],
+      "columns_with_negative_values": {
+        "bank_months_count": 247181,
+        "credit_risk_score": 12135,
+        "current_address_months_count": 3479,
+        "device_distinct_emails_8w": 334,
+        "intended_balcon_amount": 751743,
+        "prev_address_months_count": 761771,
+        "session_length_in_minutes": 2262,
+        "velocity_6h": 44
+      },
+      "constant_features": [
+        "device_fraud_count"
+      ],
+      "dtypes_object": [
+        "payment_type",
+        "employment_status",
+        "housing_status",
+        "source",
+        "device_os"
+      ],
+      "duplicate_rows_features_only": 0,
+      "fraud_rate": 0.01103,
+      "leak_candidates_auroc_gt_0.95": [],
+      "n_features": 30,
+      "nan_cells": 0,
+      "per_month": {
+        "0": {
+          "fraud": 936,
+          "n": 80026,
+          "rate": 0.0117
+        },
+        "1": {
+          "fraud": 938,
+          "n": 105277,
+          "rate": 0.00891
+        },
+        "2": {
+          "fraud": 1045,
+          "n": 142615,
+          "rate": 0.00733
+        },
+        "3": {
+          "fraud": 2135,
+          "n": 156544,
+          "rate": 0.01364
+        },
+        "4": {
+          "fraud": 1982,
+          "n": 126370,
+          "rate": 0.01568
+        },
+        "5": {
+          "fraud": 1342,
+          "n": 147496,
+          "rate": 0.0091
+        },
+        "6": {
+          "fraud": 1668,
+          "n": 136092,
+          "rate": 0.01226
+        },
+        "7": {
+          "fraud": 984,
+          "n": 105580,
+          "rate": 0.00932
+        }
+      },
+      "rows": 1000000,
+      "single_feature_auroc_dev_top10": {
+        "bank_branch_count_8w": 0.5827,
+        "credit_risk_score": 0.6906,
+        "current_address_months_count": 0.6423,
+        "customer_age": 0.7011,
+        "date_of_birth_distinct_emails_4w": 0.6763,
+        "income": 0.6312,
+        "keep_alive_session": 0.6216,
+        "name_email_similarity": 0.5914,
+        "prev_address_months_count": 0.5984,
+        "proposed_credit_limit": 0.662
+      },
+      "variant": "Variant IV"
+    },
+    "Variant V": {
+      "columns": [
+        "fraud_bool",
+        "income",
+        "name_email_similarity",
+        "prev_address_months_count",
+        "current_address_months_count",
+        "customer_age",
+        "days_since_request",
+        "intended_balcon_amount",
+        "payment_type",
+        "zip_count_4w",
+        "velocity_6h",
+        "velocity_24h",
+        "velocity_4w",
+        "bank_branch_count_8w",
+        "date_of_birth_distinct_emails_4w",
+        "employment_status",
+        "credit_risk_score",
+        "email_is_free",
+        "housing_status",
+        "phone_home_valid",
+        "phone_mobile_valid",
+        "bank_months_count",
+        "has_other_cards",
+        "proposed_credit_limit",
+        "foreign_request",
+        "source",
+        "session_length_in_minutes",
+        "device_os",
+        "keep_alive_session",
+        "device_distinct_emails_8w",
+        "device_fraud_count",
+        "month",
+        "x1",
+        "x2"
+      ],
+      "columns_with_negative_values": {
+        "bank_months_count": 246922,
+        "credit_risk_score": 12118,
+        "current_address_months_count": 3381,
+        "device_distinct_emails_8w": 342,
+        "intended_balcon_amount": 751071,
+        "prev_address_months_count": 761730,
+        "session_length_in_minutes": 2165,
+        "velocity_6h": 39,
+        "x1": 498035,
+        "x2": 498424
+      },
+      "constant_features": [
+        "device_fraud_count"
+      ],
+      "dtypes_object": [
+        "payment_type",
+        "employment_status",
+        "housing_status",
+        "source",
+        "device_os"
+      ],
+      "duplicate_rows_features_only": 0,
+      "fraud_rate": 0.01103,
+      "leak_candidates_auroc_gt_0.95": [],
+      "n_features": 32,
+      "nan_cells": 0,
+      "per_month": {
+        "0": {
+          "fraud": 936,
+          "n": 80026,
+          "rate": 0.0117
+        },
+        "1": {
+          "fraud": 938,
+          "n": 105278,
+          "rate": 0.00891
+        },
+        "2": {
+          "fraud": 1044,
+          "n": 142614,
+          "rate": 0.00732
+        },
+        "3": {
+          "fraud": 2136,
+          "n": 156546,
+          "rate": 0.01364
+        },
+        "4": {
+          "fraud": 1982,
+          "n": 126368,
+          "rate": 0.01568
+        },
+        "5": {
+          "fraud": 1342,
+          "n": 147496,
+          "rate": 0.0091
+        },
+        "6": {
+          "fraud": 1668,
+          "n": 136092,
+          "rate": 0.01226
+        },
+        "7": {
+          "fraud": 984,
+          "n": 105580,
+          "rate": 0.00932
+        }
+      },
+      "rows": 1000000,
+      "single_feature_auroc_dev_top10": {
+        "bank_branch_count_8w": 0.5941,
+        "credit_risk_score": 0.6636,
+        "current_address_months_count": 0.6088,
+        "income": 0.6325,
+        "keep_alive_session": 0.618,
+        "name_email_similarity": 0.5895,
+        "phone_home_valid": 0.5986,
+        "proposed_credit_limit": 0.64,
+        "x1": 0.7229,
+        "x2": 0.7271
+      },
+      "variant": "Variant V"
+    }
+  },
+  "elliptic": {
+    "T1_illicit_total": 914,
+    "T2_illicit_by_period": {
+      "43": 24,
+      "44": 24,
+      "45": 5,
+      "46": 2,
+      "47": 22,
+      "48": 36,
+      "49": 56
+    },
+    "T2_illicit_total": 169,
+    "constant_features": [],
+    "cross_period_edges": 0,
+    "duplicate_feature_rows": 49,
+    "duplicate_groups_spanning_periods": 0,
+    "eval_groups": {
+      "1": 0,
+      "10": 9,
+      "11": 10,
+      "12": 11,
+      "13": 12,
+      "14": 13,
+      "15": 14,
+      "16": 15,
+      "17": 16,
+      "18": 17,
+      "19": 18,
+      "2": 1,
+      "20": 19,
+      "21": 20,
+      "22": 21,
+      "23": 22,
+      "24": 23,
+      "25": 24,
+      "26": 25,
+      "27": 26,
+      "28": 27,
+      "29": 28,
+      "3": 2,
+      "30": 29,
+      "31": 30,
+      "32": 31,
+      "33": 32,
+      "34": 33,
+      "35": 34,
+      "36": 35,
+      "37": 36,
+      "38": 37,
+      "39": 38,
+      "4": 3,
+      "40": 39,
+      "41": 40,
+      "42": 41,
+      "43": 42,
+      "44": 43,
+      "45": 44,
+      "46": 45,
+      "47": 45,
+      "48": 46,
+      "49": 47,
+      "5": 4,
+      "6": 5,
+      "7": 6,
+      "8": 7,
+      "9": 8
+    },
+    "feature_inf": 0,
+    "feature_nan": 0,
+    "label_counts": {
+      "illicit": 4545,
+      "licit": 42019,
+      "unknown": 157205
+    },
+    "labeled_vs_unlabeled_domain_auc_dev": 0.9851,
+    "leak_candidates_auroc_gt_0.95": [],
+    "n_edges": 234355,
+    "n_nodes": 203769,
+    "per_period": {
+      "1": {
+        "n": 7880,
+        "n_illicit": 17,
+        "n_labeled": 2147
+      },
+      "10": {
+        "n": 6727,
+        "n_illicit": 18,
+        "n_labeled": 972
+      },
+      "11": {
+        "n": 4296,
+        "n_illicit": 131,
+        "n_labeled": 696
+      },
+      "12": {
+        "n": 2047,
+        "n_illicit": 16,
+        "n_labeled": 506
+      },
+      "13": {
+        "n": 4528,
+        "n_illicit": 291,
+        "n_labeled": 809
+      },
+      "14": {
+        "n": 2022,
+        "n_illicit": 43,
+        "n_labeled": 417
+      },
+      "15": {
+        "n": 3639,
+        "n_illicit": 147,
+        "n_labeled": 618
+      },
+      "16": {
+        "n": 2975,
+        "n_illicit": 128,
+        "n_labeled": 530
+      },
+      "17": {
+        "n": 3385,
+        "n_illicit": 99,
+        "n_labeled": 811
+      },
+      "18": {
+        "n": 1976,
+        "n_illicit": 52,
+        "n_labeled": 389
+      },
+      "19": {
+        "n": 3506,
+        "n_illicit": 80,
+        "n_labeled": 745
+      },
+      "2": {
+        "n": 4544,
+        "n_illicit": 18,
+        "n_labeled": 1117
+      },
+      "20": {
+        "n": 4291,
+        "n_illicit": 260,
+        "n_labeled": 900
+      },
+      "21": {
+        "n": 3537,
+        "n_illicit": 100,
+        "n_labeled": 641
+      },
+      "22": {
+        "n": 5894,
+        "n_illicit": 158,
+        "n_labeled": 1763
+      },
+      "23": {
+        "n": 4165,
+        "n_illicit": 53,
+        "n_labeled": 1187
+      },
+      "24": {
+        "n": 4592,
+        "n_illicit": 137,
+        "n_labeled": 1126
+      },
+      "25": {
+        "n": 2314,
+        "n_illicit": 118,
+        "n_labeled": 594
+      },
+      "26": {
+        "n": 2523,
+        "n_illicit": 96,
+        "n_labeled": 517
+      },
+      "27": {
+        "n": 1089,
+        "n_illicit": 24,
+        "n_labeled": 206
+      },
+      "28": {
+        "n": 1653,
+        "n_illicit": 85,
+        "n_labeled": 284
+      },
+      "29": {
+        "n": 4275,
+        "n_illicit": 329,
+        "n_labeled": 1174
+      },
+      "3": {
+        "n": 6621,
+        "n_illicit": 11,
+        "n_labeled": 1279
+      },
+      "30": {
+        "n": 2483,
+        "n_illicit": 83,
+        "n_labeled": 524
+      },
+      "31": {
+        "n": 2816,
+        "n_illicit": 106,
+        "n_labeled": 710
+      },
+      "32": {
+        "n": 4525,
+        "n_illicit": 342,
+        "n_labeled": 1323
+      },
+      "33": {
+        "n": 3151,
+        "n_illicit": 23,
+        "n_labeled": 441
+      },
+      "34": {
+        "n": 2486,
+        "n_illicit": 37,
+        "n_labeled": 515
+      },
+      "35": {
+        "n": 5507,
+        "n_illicit": 182,
+        "n_labeled": 1341
+      },
+      "36": {
+        "n": 6393,
+        "n_illicit": 33,
+        "n_labeled": 1708
+      },
+      "37": {
+        "n": 3306,
+        "n_illicit": 40,
+        "n_labeled": 498
+      },
+      "38": {
+        "n": 2891,
+        "n_illicit": 111,
+        "n_labeled": 756
+      },
+      "39": {
+        "n": 2760,
+        "n_illicit": 81,
+        "n_labeled": 1183
+      },
+      "4": {
+        "n": 5693,
+        "n_illicit": 30,
+        "n_labeled": 1440
+      },
+      "40": {
+        "n": 4481,
+        "n_illicit": 112,
+        "n_labeled": 1211
+      },
+      "41": {
+        "n": 5342,
+        "n_illicit": 116,
+        "n_labeled": 1132
+      },
+      "42": {
+        "n": 7140,
+        "n_illicit": 239,
+        "n_labeled": 2154
+      },
+      "43": {
+        "n": 5063,
+        "n_illicit": 24,
+        "n_labeled": 1370
+      },
+      "44": {
+        "n": 4975,
+        "n_illicit": 24,
+        "n_labeled": 1591
+      },
+      "45": {
+        "n": 5598,
+        "n_illicit": 5,
+        "n_labeled": 1221
+      },
+      "46": {
+        "n": 3519,
+        "n_illicit": 2,
+        "n_labeled": 712
+      },
+      "47": {
+        "n": 5121,
+        "n_illicit": 22,
+        "n_labeled": 846
+      },
+      "48": {
+        "n": 2954,
+        "n_illicit": 36,
+        "n_labeled": 471
+      },
+      "49": {
+        "n": 2454,
+        "n_illicit": 56,
+        "n_labeled": 476
+      },
+      "5": {
+        "n": 6803,
+        "n_illicit": 8,
+        "n_labeled": 1882
+      },
+      "6": {
+        "n": 4328,
+        "n_illicit": 5,
+        "n_labeled": 485
+      },
+      "7": {
+        "n": 6048,
+        "n_illicit": 102,
+        "n_labeled": 1203
+      },
+      "8": {
+        "n": 4457,
+        "n_illicit": 67,
+        "n_labeled": 1165
+      },
+      "9": {
+        "n": 4996,
+        "n_illicit": 248,
+        "n_labeled": 778
+      }
+    },
+    "periods_below_5_illicit": [
+      46
+    ],
+    "provider_standardised": true,
+    "single_feature_auroc_dev_top10": {
+      "tx_f133": 0.8056,
+      "tx_f143": 0.8048,
+      "tx_f15": 0.8113,
+      "tx_f24": 0.8085,
+      "tx_f30": 0.8085,
+      "tx_f54": 0.8548,
+      "tx_f56": 0.8364,
+      "tx_f6": 0.8114,
+      "tx_f61": 0.8046,
+      "tx_f91": 0.832
+    }
+  }
+}

@@ -1,0 +1,14 @@
+dataset: elliptic
+dev_auprc: 0.8441437626827583
+fs: F_all
+hp:
+  M: 3
+  colsample: 0.8
+  eta: 0.2249464246838847
+  max_depth: 4
+  min_child_weight: 1
+  pos_weight_pow: 1.0
+  recent_periods: 5
+  rounds: 400
+  subsample: 0.6
+scorer: delayed

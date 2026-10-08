@@ -1,0 +1,202 @@
+{
+ "scorer": "xgb",
+ "table": "xgb_F_all_D2_W4_R5",
+ "chow": {
+  "a": 0.03333333333333333,
+  "b": 0.8
+ },
+ "T1": {
+  "n_pos": 914,
+  "missed_rate_pi2": 0.0675054704595186,
+  "auroc_u_for_missed": 0.622797384368087,
+  "auroc_pc_for_missed": 1.0,
+  "mean_u_missed": 0.00032803480280563235,
+  "mean_u_caught": 0.0004896543687209487,
+  "mean_u_negatives": 0.000291010073851794,
+  "mean_pc_missed": 0.009283486262271724,
+  "cost_share": {
+   "fn_approved": 18510.0,
+   "review": 13502.0,
+   "fp_blocked": 540.0
+  },
+  "mad_ma": 0.7,
+  "mad_mb": 1.0,
+  "pi2_review_rate": 0.11244043142563828,
+  "pi4_review_rate": 0.12484506783394085,
+  "prev_cur": 0.09457156705750411,
+  "prev_win": 0.1224638955193063
+ },
+ "T2": {
+  "n_pos": 169,
+  "missed_rate_pi2": 0.18698224852071005,
+  "auroc_u_for_missed": 0.12243657067049915,
+  "auroc_pc_for_missed": 1.0,
+  "mean_u_missed": 0.00023899778898339719,
+  "mean_u_caught": 0.0026596614625304937,
+  "mean_u_negatives": 0.0002665610518306494,
+  "mean_pc_missed": 0.022080333057617852,
+  "cost_share": {
+   "fn_approved": 9480.0,
+   "review": 17355.0,
+   "fp_blocked": 420.0
+  },
+  "mad_ma": 0.8428571428571429,
+  "mad_mb": 1.0,
+  "pi2_review_rate": 0.22407545904512183,
+  "pi4_review_rate": 0.2658042010032741,
+  "prev_cur": 0.037084571614773076,
+  "prev_win": 0.06385280979446617
+ },
+ "trajectory": [
+  {
+   "period": 35,
+   "ma": 0.925,
+   "mb": 1.0,
+   "review_rate_pi2": 0.0736,
+   "review_rate_pi4": 0.0738,
+   "prev_cur": 0.1357,
+   "prev_win": 0.2077,
+   "mean_pc_cur": 0.1373
+  },
+  {
+   "period": 36,
+   "ma": 0.675,
+   "mb": 1.0,
+   "review_rate_pi2": 0.1247,
+   "review_rate_pi4": 0.1252,
+   "prev_cur": 0.0193,
+   "prev_win": 0.1904,
+   "mean_pc_cur": 0.0327
+  },
+  {
+   "period": 37,
+   "ma": 0.525,
+   "mb": 1.0,
+   "review_rate_pi2": 0.0966,
+   "review_rate_pi4": 0.0974,
+   "prev_cur": 0.0803,
+   "prev_win": 0.1764,
+   "mean_pc_cur": 0.0599
+  },
+  {
+   "period": 38,
+   "ma": 0.575,
+   "mb": 1.0,
+   "review_rate_pi2": 0.1066,
+   "review_rate_pi4": 0.1238,
+   "prev_cur": 0.1468,
+   "prev_win": 0.1054,
+   "mean_pc_cur": 0.1404
+  },
+  {
+   "period": 39,
+   "ma": 0.75,
+   "mb": 1.0,
+   "review_rate_pi2": 0.0295,
+   "review_rate_pi4": 0.0295,
+   "prev_cur": 0.0685,
+   "prev_win": 0.0707,
+   "mean_pc_cur": 0.0654
+  },
+  {
+   "period": 40,
+   "ma": 0.65,
+   "mb": 1.0,
+   "review_rate_pi2": 0.0881,
+   "review_rate_pi4": 0.0881,
+   "prev_cur": 0.0925,
+   "prev_win": 0.0719,
+   "mean_pc_cur": 0.0704
+  },
+  {
+   "period": 41,
+   "ma": 0.775,
+   "mb": 1.0,
+   "review_rate_pi2": 0.0501,
+   "review_rate_pi4": 0.1301,
+   "prev_cur": 0.1025,
+   "prev_win": 0.0621,
+   "mean_pc_cur": 0.1068
+  },
+  {
+   "period": 42,
+   "ma": 0.725,
+   "mb": 1.0,
+   "review_rate_pi2": 0.3303,
+   "review_rate_pi4": 0.3308,
+   "prev_cur": 0.111,
+   "prev_win": 0.0952,
+   "mean_pc_cur": 0.1065
+  },
+  {
+   "period": 43,
+   "ma": 0.675,
+   "mb": 1.0,
+   "review_rate_pi2": 0.5313,
+   "review_rate_pi4": 0.5451,
+   "prev_cur": 0.0175,
+   "prev_win": 0.0965,
+   "mean_pc_cur": 0.0268
+  },
+  {
+   "period": 44,
+   "ma": 0.75,
+   "mb": 1.0,
+   "review_rate_pi2": 0.2031,
+   "review_rate_pi4": 0.4527,
+   "prev_cur": 0.0151,
+   "prev_win": 0.0876,
+   "mean_pc_cur": 0.0283
+  },
+  {
+   "period": 45,
+   "ma": 0.8,
+   "mb": 1.0,
+   "review_rate_pi2": 0.2657,
+   "review_rate_pi4": 0.2913,
+   "prev_cur": 0.0041,
+   "prev_win": 0.1038,
+   "mean_pc_cur": 0.0242
+  },
+  {
+   "period": 46,
+   "ma": 0.9,
+   "mb": 1.0,
+   "review_rate_pi2": 0.1376,
+   "review_rate_pi4": 0.1378,
+   "prev_cur": 0.0028,
+   "prev_win": 0.0814,
+   "mean_pc_cur": 0.0179
+  },
+  {
+   "period": 47,
+   "ma": 1.0,
+   "mb": 1.0,
+   "review_rate_pi2": 0.1556,
+   "review_rate_pi4": 0.1556,
+   "prev_cur": 0.026,
+   "prev_win": 0.0561,
+   "mean_pc_cur": 0.0187
+  },
+  {
+   "period": 48,
+   "ma": 0.85,
+   "mb": 1.0,
+   "review_rate_pi2": 0.1183,
+   "review_rate_pi4": 0.118,
+   "prev_cur": 0.0764,
+   "prev_win": 0.0127,
+   "mean_pc_cur": 0.0143
+  },
+  {
+   "period": 49,
+   "ma": 0.925,
+   "mb": 1.0,
+   "review_rate_pi2": 0.1569,
+   "review_rate_pi4": 0.1601,
+   "prev_cur": 0.1176,
+   "prev_win": 0.0088,
+   "mean_pc_cur": 0.0158
+  }
+ ]
+}

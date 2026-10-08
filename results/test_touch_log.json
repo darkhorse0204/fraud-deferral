@@ -1,0 +1,110 @@
+[
+  {
+    "time_utc": "2026-10-07T22:39:17+00:00",
+    "experiment": "E0",
+    "purpose": "reproduction gate: default RF, Weber protocol; qualitative step-43 collapse check only",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-07T23:42:33+00:00",
+    "experiment": "scores:baf_Base:main",
+    "purpose": "generate test-era scores from frozen configs",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-07T23:59:26+00:00",
+    "experiment": "scores:elliptic:frozen",
+    "purpose": "generate test-era scores from frozen configs",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T00:04:47+00:00",
+    "experiment": "scores:elliptic:dsweep",
+    "purpose": "generate test-era scores from frozen configs",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T00:07:09+00:00",
+    "experiment": "scores:baf_Base:frozen",
+    "purpose": "generate test-era scores from frozen configs",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T00:10:48+00:00",
+    "experiment": "scores:baf_Base:dsweep",
+    "purpose": "generate test-era scores from frozen configs",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T00:42:53+00:00",
+    "experiment": "scores:elliptic:shuffle",
+    "purpose": "generate test-era scores from frozen configs",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T00:43:35+00:00",
+    "experiment": "scores:elliptic:robust",
+    "purpose": "generate test-era scores from frozen configs",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T00:45:41+00:00",
+    "experiment": "scores:baf_Variant III:main",
+    "purpose": "generate test-era scores from frozen configs",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T01:27:04+00:00",
+    "experiment": "novelty_probe",
+    "purpose": "post-hoc exploratory: IsolationForest novelty replaces u; policies re-run on test scores",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T09:01:08+00:00",
+    "experiment": "extra_analyses",
+    "purpose": "exploratory sensitivity analyses on frozen Study 1 test scores",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T09:21:30+00:00",
+    "experiment": "study2:scores:xgb",
+    "purpose": "generate Study 2 test-era scores from frozen configs",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T09:28:23+00:00",
+    "experiment": "study2:scores:lr",
+    "purpose": "generate Study 2 test-era scores from frozen configs",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T09:29:28+00:00",
+    "experiment": "study2:scores:mlp",
+    "purpose": "generate Study 2 test-era scores from frozen configs",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T09:55:48+00:00",
+    "experiment": "study2:scores:rf",
+    "purpose": "generate Study 2 test-era scores from frozen configs",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T10:33:07+00:00",
+    "experiment": "study2_diagnosis",
+    "purpose": "post-hoc decomposition of Study 2 costs and calibration by amount",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T10:34:02+00:00",
+    "experiment": "study2_posthoc",
+    "purpose": "post-hoc exploratory: amount-stratified recalibration on Study 2 test scores",
+    "git": "no-commit"
+  },
+  {
+    "time_utc": "2026-10-08T10:35:04+00:00",
+    "experiment": "study2_diagnosis",
+    "purpose": "post-hoc decomposition of Study 2 costs and calibration by amount",
+    "git": "no-commit"
+  }
+]

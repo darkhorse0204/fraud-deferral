@@ -1,0 +1,17 @@
+name: elliptic
+kaggle_slug: ellipticco/elliptic-data-set
+raw_dir: data/raw/elliptic
+# License text as shown in Kaggle metadata (2026-10-08). Re-verify against the publisher page.
+license: "CC BY-NC-ND 4.0 (Kaggle metadata). No derivatives: do not redistribute modified copies."
+citation: "Weber et al., KDD'19 Workshop on Anomaly Detection in Finance, arXiv:1908.02591; Elliptic, www.elliptic.co"
+expected_files:
+  - elliptic_txs_features.csv
+  - elliptic_txs_classes.csv
+  - elliptic_txs_edgelist.csv
+expected:
+  n_nodes: 203769
+  n_edges: 234355
+  n_features_columns: 167   # txId + 166 features (first is the time step)
+  n_illicit: 4545
+  n_licit: 42019
+  n_timesteps: 49

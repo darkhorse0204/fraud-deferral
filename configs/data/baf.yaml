@@ -1,0 +1,19 @@
+name: baf
+kaggle_slug: sgpjesus/bank-account-fraud-dataset-neurips-2022
+raw_dir: data/raw/baf
+# Sources disagree: Kaggle metadata says CC-BY-NC-SA-4.0; GitHub/paper listing says CC BY-NC-ND 4.0.
+# Treated as the stricter of the two until resolved: non-commercial, no redistribution of derived data.
+license: "CC-BY-NC-SA-4.0 (Kaggle metadata) vs CC BY-NC-ND 4.0 (other sources) -- UNRESOLVED"
+citation: "Jesus et al., NeurIPS 2022 Datasets & Benchmarks, arXiv:2211.13358"
+expected_files:
+  - Base.csv
+  - Variant I.csv
+  - Variant II.csv
+  - Variant III.csv
+  - Variant IV.csv
+  - Variant V.csv
+expected:
+  n_rows_per_file: 1000000
+  months: [0, 1, 2, 3, 4, 5, 6, 7]
+target: fraud_bool
+period_col: month

@@ -1,0 +1,12 @@
+dev_auprc: 0.4534607632944577
+hp:
+  M: 3
+  colsample: 0.5
+  device: cuda
+  eta: 0.03823903593137574
+  max_depth: 4
+  min_child_weight: 1
+  pos_weight_pow: 0.5
+  rounds: 200
+  subsample: 1.0
+scorer: xgb

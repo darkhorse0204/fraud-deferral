@@ -1,0 +1,5 @@
+dataset: elliptic
+dev_auprc: 0.8634350886340808
+fs: F_all
+hp: {}
+scorer: rf

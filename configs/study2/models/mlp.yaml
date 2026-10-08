@@ -1,0 +1,6 @@
+dev_auprc: 0.4414025842515233
+hp:
+  M: 3
+  bs: 4096
+  patience: 4
+scorer: mlp

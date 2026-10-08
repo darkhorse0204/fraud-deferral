@@ -1,0 +1,16 @@
+dataset: elliptic
+dev_auprc: 0.5664842085478465
+fs: F_local
+hp:
+  M: 3
+  bs: 512
+  drop: 0.3
+  epochs: 30
+  lr: 0.0004162488723698204
+  patience: 6
+  pos_weight_pow: 0.0
+  wd: 0.001
+  widths:
+  - 512
+  - 256
+scorer: mlp

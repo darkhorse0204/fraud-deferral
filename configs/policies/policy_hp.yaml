@@ -1,0 +1,40 @@
+baf:
+  W: 3
+  alpha: 0.05
+  calib: isotonic
+  dataset: baf
+  dev_ratio_mad_vs_pi2: 1.0
+  eps: 0.5
+  h: inf
+  lam: 0.0
+  min_gain: 0.0
+  theta0:
+    delayed_F_all_D1_W1_R2: 0.932246208190918
+    lr_F_all_D1_W1_R2: 0.1357368379831314
+    mcd_F_all_D1_W1_R2: 0.922637403011322
+    mlp_F_all_D1_W1_R2: 0.9238033294677734
+    xgb_F_all_D1_W1_R2: 0.932246208190918
+elliptic:
+  W: 3
+  alpha: 0.05
+  calib: isotonic
+  dataset: elliptic
+  dev_ratio_mad_vs_pi2: 0.9967732111319018
+  eps: 0.5
+  h: inf
+  lam: 0.0
+  min_gain: 0.0
+  theta0:
+    delayed_F_all_D2_W4_R5: 0.35877230763435364
+    evolve_F_local_D2_W4_R5: 0.4684704542160034
+    lr_F_all_D2_W4_R5: 0.6192361116409302
+    lr_F_local_D2_W4_R5: 0.05582575127482414
+    mcd_F_all_D2_W4_R5: 0.26599225401878357
+    mlp_F_all_D2_W4_R5: 0.1371874213218689
+    mlp_F_local_D2_W4_R5: 0.008298317901790142
+    rf_F_all_D2_W4_R5: 0.28076425194740295
+    rf_F_local_D2_W4_R5: 0.25918570160865784
+    sage_F_all_D2_W4_R5: 0.5077486038208008
+    sage_F_local_D2_W4_R5: 0.4374464154243469
+    xgb_F_all_D2_W4_R5: 0.338996946811676
+    xgb_F_local_D2_W4_R5: 0.2554735243320465

@@ -1,0 +1,62 @@
+# STUDY 2 PRE-REGISTRATION (addendum). Frozen by `python -m experiments.study2 lock` BEFORE any Study 2 test-era score exists.
+# Status: designed AFTER the Study 1 results were known. It is a new dataset, so its test era is untouched; the
+# predictions below are informed by Study 1 and are stated as directional predictions where Study 1 supports one.
+title: "Study 2: amount-based decision cost, novelty-aware signals and emerging ransomware families (BitcoinHeist)"
+dataset:
+  name: BitcoinHeist ransomware address dataset (UCI, doi:10.24432/C5BG8V, CC BY 4.0)
+  unit: "one (address, day) row; label = ransomware family vs 'white'; amount = income (BTC)"
+  rows: 2916697
+  periods: "28-day blocks, 13 per year; period = 13*(year-2011) + min((day-1)//28, 12)"
+  eras: {dev: [0, 51], test: [52, 90], T1: [52, 64], T2: [65, 90]}   # dev 2011-2014, T1 2015, T2 2016-2017
+  excluded: "2018 (3 positives in the year)"
+  T2_rationale: "2016 is the first year of the Locky, Cerber and CryptXXX families in the label metadata (family-by-year counts, read before any model was fit)"
+  known_properties:
+    - "legitimate ('white') addresses are subsampled to at most 1,000 per day; ransomware rows are complete, so prevalence is not a population rate"
+    - "labels of 'white' are not verified negatives (dataset documentation)"
+features:
+  used: "6 published graph features (+ log1p of the 5 heavy-tailed ones) and one matured-blacklist flag (an earlier row of the same address was labelled ransomware and that label had matured: first_positive_period + D < period)"
+  dev_evidence: {base_11_auprc: 0.0377, base_plus_blacklist_auprc: 0.3512, dev_base_rate: 0.0288}
+  excluded_after_dev_check:
+    address_history_counts: "dev AUPRC 0.45 but repeat counts are an artefact of subsampling legitimate addresses"
+    same_day_row_counts: "never computed: a day's row count equals 1,000 + number of positives (leak)"
+    amount_roundness: "no dev gain (0.0381)"
+  never_features: [year, day, address, family]
+protocol:
+  maturity: "label of an event from period s usable at decision period t iff s + D < t"
+  D: 2
+  Wc: 3
+  R: 6
+  seeds: 5
+  scorers: [lr, rf, xgb, mlp]
+  tuning: "EQUAL budget of 8 random-search trials per family (trial 0 = default) on dev walk-forward AUPRC, origins 30/36/42/48"
+  fixed_settings: "random forest capacity-capped for memory (200 trees, depth 16, 100,000 rows per tree); MLP batch 4096; XGBoost on GPU"
+  primary_scorer_rule: "ensemble-capable scorer (rf, xgb, mlp) with the highest mean dev AUPRC"
+  decision_layer: "NOT tuned on this dataset: the settings frozen in Study 1 are reused unchanged (isotonic recalibration, window 3, MAD lam/eps)"
+cost_model:
+  approve_illicit: "A_i (the amount received, BTC)"
+  block_legitimate: "m * A_i"
+  review: "c_r (BTC)"
+  grid: {c_r: [0.05, 0.25, 1.0], m: [0.05, 0.25, 1.0]}
+  primary: {c_r: 0.25, m: 0.25}
+  band: "per event: a_i = c_r / A_i, b_i = 1 - c_r / (m A_i); two-action threshold m / (1 + m) where the band is empty"
+policies:
+  pi1: single threshold m / (1 + m) on recalibrated p
+  pi2: per-event Chow band on recalibrated p (control)
+  pi3: pi2 + review where the ensemble variance exceeds a window-estimated cap
+  pi4: MAD (and pi4_nodelta)
+  pi3_if / pi3_maha / pi3_knn: "pi3 with u replaced by an unsupervised novelty signal fitted on the features of the scorer's training periods (isolation forest, 200 trees; Mahalanobis distance; mean distance to the 10 nearest of 50,000 pool events)"
+  controls: "random permutation of u (or of the novelty signal) within each (seed, origin) table"
+  pi7: oracle over MAD's multiplier grid (bound only)
+hypotheses:
+  S2-H1: "Replication of Study 1's exploratory finding. Over the whole test era (39 periods), primary scorer, primary cell: pi2 has lower cost than pi1; 95% moving-block-bootstrap CI (block 2, B=5000) of the gain excludes 0. Prediction: supported."
+  S2-H2: "Ensemble variance adds nothing: pi3 is equivalent to pi2 within +-2% of pi2's cost (TOST over periods). Prediction: equivalence holds."
+  S2-H3: "MAD (pi4) vs pi2, two-sided. Prediction from Study 1: gain <= 0."
+  S2-H4: "Novelty-capped pi3 (three signals) vs pi2, two-sided, and vs its own random control. No directional prediction."
+confirmatory_family_for_holm: [S2-H1, S2-H3, S2-H4-if, S2-H4-maha, S2-H4-knn]
+secondary_pre_specified:
+  - "T1 / T2 breakdown and the 3 x 3 cost grid for every comparison"
+  - "all four scorers, primary cell"
+  - "novel-family analysis: an illicit test event is NOVEL if its family never appears in the scorer's training periods; report its recalibration-free score, ensemble variance and novelty signals against known-family illicit events (AUROC of each signal for novelty)"
+  - "share of test events whose address was never seen in the scorer's training periods (entity shift)"
+statistics: {unit: period, block_length: 2, resamples: 5000, ci: 0.95, per_period_aggregation: "mean over seeds, then resample periods", multiplicity: holm, equivalence_margin: 0.02}
+code_frozen: "the lock records SHA-256 of the policy, recalibration, maturity, walk-forward, model and study-2 runner source files"

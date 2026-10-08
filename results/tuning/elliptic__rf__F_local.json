@@ -1,0 +1,129 @@
+[
+ {
+  "trial": 0,
+  "hp": {},
+  "dev_auprc": 0.8499766042096996,
+  "secs": 6.9
+ },
+ {
+  "trial": 1,
+  "hp": {
+   "n_estimators": 200,
+   "max_depth": 20,
+   "min_samples_leaf": 1,
+   "max_features": "sqrt"
+  },
+  "dev_auprc": 0.8487494823394978,
+  "secs": 4.8
+ },
+ {
+  "trial": 2,
+  "hp": {
+   "n_estimators": 200,
+   "max_depth": null,
+   "min_samples_leaf": 5,
+   "max_features": 0.3
+  },
+  "dev_auprc": 0.8138894817177832,
+  "secs": 8.9
+ },
+ {
+  "trial": 3,
+  "hp": {
+   "n_estimators": 400,
+   "max_depth": 20,
+   "min_samples_leaf": 1,
+   "max_features": "sqrt"
+  },
+  "dev_auprc": 0.8528215367761224,
+  "secs": 8.9
+ },
+ {
+  "trial": 4,
+  "hp": {
+   "n_estimators": 400,
+   "max_depth": null,
+   "min_samples_leaf": 1,
+   "max_features": "sqrt"
+  },
+  "dev_auprc": 0.8524882340868594,
+  "secs": 9.4
+ },
+ {
+  "trial": 5,
+  "hp": {
+   "n_estimators": 400,
+   "max_depth": 10,
+   "min_samples_leaf": 1,
+   "max_features": "sqrt"
+  },
+  "dev_auprc": 0.8430936972355593,
+  "secs": 9.3
+ },
+ {
+  "trial": 6,
+  "hp": {
+   "n_estimators": 200,
+   "max_depth": 10,
+   "min_samples_leaf": 5,
+   "max_features": 0.3
+  },
+  "dev_auprc": 0.800866037598379,
+  "secs": 8.4
+ },
+ {
+  "trial": 7,
+  "hp": {
+   "n_estimators": 400,
+   "max_depth": null,
+   "min_samples_leaf": 2,
+   "max_features": 0.3
+  },
+  "dev_auprc": 0.8231775594169615,
+  "secs": 19.5
+ },
+ {
+  "trial": 8,
+  "hp": {
+   "n_estimators": 400,
+   "max_depth": null,
+   "min_samples_leaf": 1,
+   "max_features": "sqrt"
+  },
+  "dev_auprc": 0.8524882340868594,
+  "secs": 12.2
+ },
+ {
+  "trial": 9,
+  "hp": {
+   "n_estimators": 200,
+   "max_depth": 20,
+   "min_samples_leaf": 2,
+   "max_features": 0.3
+  },
+  "dev_auprc": 0.8150118517501426,
+  "secs": 13.7
+ },
+ {
+  "trial": 10,
+  "hp": {
+   "n_estimators": 400,
+   "max_depth": 10,
+   "min_samples_leaf": 2,
+   "max_features": "sqrt"
+  },
+  "dev_auprc": 0.8443946082762793,
+  "secs": 12.9
+ },
+ {
+  "trial": 11,
+  "hp": {
+   "n_estimators": 200,
+   "max_depth": null,
+   "min_samples_leaf": 5,
+   "max_features": "sqrt"
+  },
+  "dev_auprc": 0.8498561887325109,
+  "secs": 6.4
+ }
+]

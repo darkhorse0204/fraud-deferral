@@ -1,0 +1,90 @@
+[
+ {
+  "trial": 0,
+  "hp": {
+   "M": 3
+  },
+  "dev_auprc": 0.12231566663425428,
+  "secs": 7.3
+ },
+ {
+  "trial": 1,
+  "hp": {
+   "eta": 0.14221735351247625,
+   "max_depth": 3,
+   "rounds": 100,
+   "subsample": 0.6,
+   "colsample": 0.5,
+   "min_child_weight": 5,
+   "pos_weight_pow": 1.0,
+   "M": 3,
+   "recent_periods": 5
+  },
+  "dev_auprc": 0.154624857072611,
+  "secs": 3.0
+ },
+ {
+  "trial": 2,
+  "hp": {
+   "eta": 0.04162488723698202,
+   "max_depth": 8,
+   "rounds": 400,
+   "subsample": 0.6,
+   "colsample": 0.5,
+   "min_child_weight": 1,
+   "pos_weight_pow": 1.0,
+   "M": 3,
+   "recent_periods": 3
+  },
+  "dev_auprc": 0.1029169870133331,
+  "secs": 17.6
+ },
+ {
+  "trial": 3,
+  "hp": {
+   "eta": 0.04433436622198199,
+   "max_depth": 4,
+   "rounds": 200,
+   "subsample": 1.0,
+   "colsample": 0.8,
+   "min_child_weight": 5,
+   "pos_weight_pow": 0.0,
+   "M": 3,
+   "recent_periods": 3
+  },
+  "dev_auprc": 0.1466771773420496,
+  "secs": 5.2
+ },
+ {
+  "trial": 4,
+  "hp": {
+   "eta": 0.030321515085859764,
+   "max_depth": 6,
+   "rounds": 100,
+   "subsample": 0.8,
+   "colsample": 0.5,
+   "min_child_weight": 5,
+   "pos_weight_pow": 0.5,
+   "M": 3,
+   "recent_periods": 5
+  },
+  "dev_auprc": 0.14021333333573197,
+  "secs": 4.5
+ },
+ {
+  "trial": 5,
+  "hp": {
+   "eta": 0.11856148258460678,
+   "max_depth": 4,
+   "rounds": 100,
+   "subsample": 0.6,
+   "colsample": 0.5,
+   "min_child_weight": 5,
+   "pos_weight_pow": 0.5,
+   "M": 3,
+   "recent_periods": 5
+  },
+  "dev_auprc": 0.1507746261465066,
+  "secs": 3.6
+ }
+]

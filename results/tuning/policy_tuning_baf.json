@@ -1,0 +1,185 @@
+[
+ {
+  "stage": 2,
+  "lam": 0.0,
+  "eps": 0.5,
+  "min_gain": 0.0,
+  "ratio_vs_pi2": 1.0003692132085626
+ },
+ {
+  "stage": 2,
+  "lam": 0.0,
+  "eps": 0.5,
+  "min_gain": 0.01,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.0,
+  "eps": 0.5,
+  "min_gain": 0.03,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.0,
+  "eps": Infinity,
+  "min_gain": 0.0,
+  "ratio_vs_pi2": 1.0003392505501285
+ },
+ {
+  "stage": 2,
+  "lam": 0.0,
+  "eps": Infinity,
+  "min_gain": 0.01,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.0,
+  "eps": Infinity,
+  "min_gain": 0.03,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.02,
+  "eps": 0.5,
+  "min_gain": 0.0,
+  "ratio_vs_pi2": 1.0003642410935603
+ },
+ {
+  "stage": 2,
+  "lam": 0.02,
+  "eps": 0.5,
+  "min_gain": 0.01,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.02,
+  "eps": 0.5,
+  "min_gain": 0.03,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.02,
+  "eps": Infinity,
+  "min_gain": 0.0,
+  "ratio_vs_pi2": 1.0003642410935603
+ },
+ {
+  "stage": 2,
+  "lam": 0.02,
+  "eps": Infinity,
+  "min_gain": 0.01,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.02,
+  "eps": Infinity,
+  "min_gain": 0.03,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.1,
+  "eps": 0.5,
+  "min_gain": 0.0,
+  "ratio_vs_pi2": 1.0003642410935603
+ },
+ {
+  "stage": 2,
+  "lam": 0.1,
+  "eps": 0.5,
+  "min_gain": 0.01,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.1,
+  "eps": 0.5,
+  "min_gain": 0.03,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.1,
+  "eps": Infinity,
+  "min_gain": 0.0,
+  "ratio_vs_pi2": 1.0003642410935603
+ },
+ {
+  "stage": 2,
+  "lam": 0.1,
+  "eps": Infinity,
+  "min_gain": 0.01,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.1,
+  "eps": Infinity,
+  "min_gain": 0.03,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.5,
+  "eps": 0.5,
+  "min_gain": 0.0,
+  "ratio_vs_pi2": 1.0003642410935603
+ },
+ {
+  "stage": 2,
+  "lam": 0.5,
+  "eps": 0.5,
+  "min_gain": 0.01,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.5,
+  "eps": 0.5,
+  "min_gain": 0.03,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.5,
+  "eps": Infinity,
+  "min_gain": 0.0,
+  "ratio_vs_pi2": 1.0003642410935603
+ },
+ {
+  "stage": 2,
+  "lam": 0.5,
+  "eps": Infinity,
+  "min_gain": 0.01,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 2,
+  "lam": 0.5,
+  "eps": Infinity,
+  "min_gain": 0.03,
+  "ratio_vs_pi2": 1.0
+ },
+ {
+  "stage": 3,
+  "alpha": 0.05,
+  "ratio_vs_pi1": 0.6794534882074681
+ },
+ {
+  "stage": 3,
+  "alpha": 0.1,
+  "ratio_vs_pi1": 0.8230018852802508
+ },
+ {
+  "stage": 3,
+  "alpha": 0.2,
+  "ratio_vs_pi1": 1.3071837102626798
+ }
+]

@@ -1,0 +1,25 @@
+{
+  "D": 2,
+  "R": 6,
+  "Wc": 3,
+  "dev": [
+    0,
+    51
+  ],
+  "excluded": "2018 (periods 91-103): 3 positives in the whole year",
+  "sha256": "6190da38b7902aa21dcf736866b12d5c19ea65099ab50f8d8d137811be954645",
+  "test": [
+    52,
+    90
+  ],
+  "test_blocks": {
+    "T1": [
+      52,
+      64
+    ],
+    "T2": [
+      65,
+      90
+    ]
+  }
+}

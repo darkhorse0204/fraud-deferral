@@ -1,0 +1,12 @@
+dataset: elliptic
+dev_auprc: 0.43981245798956903
+fs: F_local
+hp:
+  M: 2
+  chunk: 6
+  drop: 0.3
+  epochs: 80
+  hidden: 64
+  lr: 0.001274634531045859
+  pos_weight_pow: 0.5
+scorer: evolve

@@ -1,0 +1,11 @@
+# Frozen cost grid (unit: c_r = 1 review). Defined before any test-era score exists.
+c_r: 1.0
+C_FN: [10, 30, 100]
+C_FP: [1, 5, 20]
+primary: {C_FN: 30, C_FP: 5}
+rho_primary: 1.0
+rho_sensitivity: [0.9]
+capacity_fraction_sensitivity: [0.005, 0.02]
+# Every C_FP = 1 cell is DEGENERATE (review band empty since c_r / C_FP = 1): reported, excluded from inference.
+degenerate_cells: [[10, 1], [30, 1], [100, 1]]
+non_degenerate_cells: 6

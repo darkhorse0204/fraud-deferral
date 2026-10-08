@@ -1,0 +1,85 @@
+[
+ {
+  "trial": 0,
+  "hp": {
+   "M": 3
+  },
+  "dev_auprc": 0.12231566663425428,
+  "secs": 8.7
+ },
+ {
+  "trial": 1,
+  "hp": {
+   "eta": 0.14221735351247625,
+   "max_depth": 3,
+   "rounds": 100,
+   "subsample": 0.6,
+   "colsample": 0.5,
+   "min_child_weight": 5,
+   "pos_weight_pow": 1.0,
+   "M": 3
+  },
+  "dev_auprc": 0.154624857072611,
+  "secs": 2.9
+ },
+ {
+  "trial": 2,
+  "hp": {
+   "eta": 0.2971141623854821,
+   "max_depth": 3,
+   "rounds": 100,
+   "subsample": 1.0,
+   "colsample": 0.5,
+   "min_child_weight": 1,
+   "pos_weight_pow": 0.0,
+   "M": 3
+  },
+  "dev_auprc": 0.14530714729252234,
+  "secs": 2.3
+ },
+ {
+  "trial": 3,
+  "hp": {
+   "eta": 0.06867017377481294,
+   "max_depth": 4,
+   "rounds": 100,
+   "subsample": 0.8,
+   "colsample": 0.8,
+   "min_child_weight": 5,
+   "pos_weight_pow": 0.5,
+   "M": 3
+  },
+  "dev_auprc": 0.14647761782506613,
+  "secs": 3.1
+ },
+ {
+  "trial": 4,
+  "hp": {
+   "eta": 0.03823903593137574,
+   "max_depth": 4,
+   "rounds": 200,
+   "subsample": 1.0,
+   "colsample": 0.5,
+   "min_child_weight": 1,
+   "pos_weight_pow": 0.5,
+   "M": 3
+  },
+  "dev_auprc": 0.14555807804877396,
+  "secs": 5.0
+ },
+ {
+  "trial": 5,
+  "hp": {
+   "eta": 0.2836243100023954,
+   "max_depth": 6,
+   "rounds": 400,
+   "subsample": 0.8,
+   "colsample": 0.8,
+   "min_child_weight": 1,
+   "pos_weight_pow": 0.0,
+   "M": 3
+  },
+  "dev_auprc": 0.09524631981865651,
+  "secs": 13.5
+ }
+]

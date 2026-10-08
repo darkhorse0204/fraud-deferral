@@ -1,0 +1,6 @@
+dev_auprc: 0.42638664974121976
+hp:
+  max_depth: 16
+  max_samples: 100000
+  n_estimators: 200
+scorer: rf

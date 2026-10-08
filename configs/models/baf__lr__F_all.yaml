@@ -1,0 +1,7 @@
+dataset: baf
+dev_auprc: 0.13309268186844503
+fs: F_all
+hp:
+  C: 0.003706186426087923
+  balanced: false
+scorer: lr
