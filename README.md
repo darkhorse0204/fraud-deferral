@@ -37,15 +37,14 @@ python -m experiments.synth_mechanism ; python -m experiments.error_analysis ; p
 python -m experiments.make_numbers && python -m experiments.make_tables && python -m experiments.make_figures
 python -m experiments.study2 tune|lock|score|novelty|policies|analyze   # Study 2 (BitcoinHeist from UCI, see data/README.md)
 python -m experiments.extra_analyses; python -m experiments.study2_diagnosis; python -m experiments.study2_posthoc   # exploratory
-python -m experiments.make_numbers2 && python -m experiments.make_figures2 s1 s2 && python -m experiments.build_docx
-cd paper && tectonic main.tex                                      # or any LaTeX with IEEEtran
+python -m experiments.make_numbers2 && python -m experiments.make_figures2 s1 s2
 ```
 (Windows has no `make`; the targets above are the commands.)
 
 ## Layout
 `src/data` loaders, maturity access, frozen splits, validation | `src/models` tabular + batched NN/GNN scorers | `src/training` walk-forward driver, tuning, score generation |
 `src/calibration` recalibrators | `src/policies` decision policies (incl. MAD) and dev tuning | `src/evaluation` costs, calibration, diagnostics | `src/stats` block bootstrap, tests |
-`experiments/` runners, analysis, figures, tables, numbers | `configs/` frozen splits, costs, model and policy hyper-parameters, `preregistration.yaml` | `results/` audits, logs, analysis JSON (score tables are not committed) | `paper/`.
+`experiments/` runners, analysis, figures, tables, numbers | `configs/` frozen splits, costs, model and policy hyper-parameters, `preregistration.yaml` | `results/` audits, logs, analysis JSON (score tables are not committed); the manuscript folder `paper/` is local only (the three `make_*` scripts write their numbers and tables into it).
 
 ## Non-negotiable rules (enforced by tests)
 - Training/calibration labels are read **only** through `src/data/maturity.py`; flipping every immature label must not change any policy decision.
