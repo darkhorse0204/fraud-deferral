@@ -1,12 +1,14 @@
 {
  "locked_utc": "2026-10-08T09:21:18+00:00",
+ "rehashed_utc": "2026-10-08T13:49:49+00:00",
+ "note": "config hashes re-expressed with CRLF->LF normalisation after the original lock verified. The only locked file that changed is experiments/study2.py, by one line in digest() (line-ending normalisation of config files); scripts/rehash_lock_study2.py checks that this is its only difference from the locked version.",
  "files": {
-  "configs/study2/models/lr.yaml": "cfdae0b175aad56f206e6577004af1be8b2b60638c2c296c78762a2677a08b0d",
-  "configs/study2/models/mlp.yaml": "aa6f62f3da14087f566493c9aa1040f416e0e10a3a5d576d57fec69cef017342",
-  "configs/study2/models/rf.yaml": "8ecfb6b1cc10172e9ebd207c4af6ce59edda52d2082484dc7ac18d1e3d764c7c",
-  "configs/study2/models/xgb.yaml": "9378896050ebbf3d9905c50be0579b642082867a53e2e3d19f953d7743af1e68",
+  "configs/study2/models/lr.yaml": "1b0576051623dca60cd54b1b65bc40d3b9d7978dd84f9c018d9f8f03c1b3b88c",
+  "configs/study2/models/mlp.yaml": "00b3feb8b83fe67349b06276b854e81eb734bd6a953d1b1274c2d2768fe52e21",
+  "configs/study2/models/rf.yaml": "2872c36e55d287290603dd77f88d8f78e7483147c8685246358920f9a2ec4a44",
+  "configs/study2/models/xgb.yaml": "0dd5c0e06bf0f4cff29b2db8a37155f3a8bd3d81f62e80d07f2c41746e3609a3",
   "configs/study2/preregistration_study2.yaml": "655b9177f4d429c9b4e56c4959e196792e4ebb86e90fd0d01ad90dfc2db40103",
-  "configs/study2/split.json": "815a47bae44272664c6266d15778ac4b1d1c9d71ca023ad3ec0f56a27f46ce93",
+  "configs/study2/split.json": "e99e30cab32c397ed26c230c5fca316838a52c171a2367bd960a6c86d84987c0",
   "src/policies/amount_policies.py": "2b96cce2c44f4a1dd87be5b4f807e3ce6aaf9c5ade6bd8574c4b8be594d8e41d",
   "src/policies/policies.py": "6ed2b8282f3bc2ff477fedd2621c4cbea65a6d2cc3bb7ddddaf34f5373786f07",
   "src/calibration/recal.py": "271d8bd3fe58364c586f1156e06920cb9fbfc0af549f15b9a404a311daa8ab32",
@@ -15,7 +17,7 @@
   "src/training/walkforward.py": "b6b1c2abda6a44be50629d0c055723d1f3d5a883fc6c543912e4354910159df1",
   "src/models/tabular.py": "053c34b32e1d00fd6d935e6723a7acca1e7c9a329b464051ae1431aaf4ab0191",
   "src/models/nn.py": "f28905962078dc47afec6286f1129fa7378d9284d7bd2e82714b6fbaca942d78",
-  "experiments/study2.py": "b7374a3b1f31c83ccf20dc1601f5a32e5b92112884f22d96b00c11af74ddd23c",
+  "experiments/study2.py": "8aa4e7d6748115614b3b2dbcaefd495b2308badcb82da348cceaa05bb086e643",
   "configs/policies/policy_hp.yaml": "dfd4b16efc6b6d007d142c0f75da15c9bc8ae66839db9ff0c019bfb6141028e0"
  }
 }

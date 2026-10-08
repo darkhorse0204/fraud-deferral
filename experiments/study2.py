@@ -104,7 +104,7 @@ def digest() -> dict:
     out = {}
     for f in sorted(CFG.rglob("*")):
         if f.is_file():
-            out[str(f.relative_to(ROOT)).replace("\\", "/")] = hashlib.sha256(f.read_bytes()).hexdigest()
+            out[str(f.relative_to(ROOT)).replace("\\", "/")] = hashlib.sha256(f.read_bytes().replace(b"\r\n", b"\n")).hexdigest()   # line-ending independent
     for rel in FROZEN_CODE + ["configs/policies/policy_hp.yaml"]:
         out[rel] = hashlib.sha256((ROOT / rel).read_bytes().replace(b"\r\n", b"\n")).hexdigest()
     return out
